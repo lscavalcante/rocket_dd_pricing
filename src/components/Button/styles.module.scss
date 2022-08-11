@@ -1,0 +1,34 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 49px;
+    background: var(--blue);
+    color: white;
+    border-radius: 10px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 1.125rem;
+
+    cursor: pointer;
+
+    transition: all 0.7s;
+    
+    &:hover:enabled {
+        opacity: 0.5;
+    }
+
+    &:disabled {
+        background: var(--gray);
+        cursor: not-allowed;
+
+    }
+}
+
+.transparent_button {
+    background: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
